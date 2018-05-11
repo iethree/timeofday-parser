@@ -2,5 +2,6 @@
   "os": "linux",
   "dist": "trusty",
   "group": "stable",
-  "language": "node_js"
+  "language": "node_js",
+  "version": "9"
 }
