@@ -3,5 +3,5 @@
   "dist": "trusty",
   "group": "stable",
   "language": "node_js",
-  "version": "9"
+  "version": "9.11.1"
 }
