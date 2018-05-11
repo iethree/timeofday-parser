@@ -1,10 +1,10 @@
 {
   "name": "timeofday-parser",
   "version": "1.0.0",
-  "description": "> This is a simple script to parse a string containing a time of day into a known format. It accepts every reasonable english language time format I could think of.",
+  "description": "This is a simple script to parse a string containing a time of day into a known format. It accepts every reasonable english language time format I could think of.",
   "main": "timeofday-parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test.js"
   },
   "keywords": [],
   "author": "",
