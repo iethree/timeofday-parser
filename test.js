@@ -11,3 +11,5 @@ function test(){
 		console.log(testvals[cnt]+" : "+JSON.stringify(tp.parse(testvals[cnt])));
 	}
 }
+
+test();
