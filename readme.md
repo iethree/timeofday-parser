@@ -15,7 +15,7 @@ This is a simple script to parse a string containing a time of day into a known 
 var timeParser = require('timeofday-parser');
 
 output = timeParser.parse("906pm");
-// {h: 9, m: 6}
+// {h: 21, m: 6}
 
 output = timeParser.parse("26pm");
 // false
