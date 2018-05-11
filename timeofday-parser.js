@@ -8,29 +8,29 @@ exports.parse = function(timeString){
 	timeString =timeString.replace(/\s/g,'');
 	
 	
-	if(timeString.match(/[.:-]/ig)){//if it has a hour-minute separator character
+	if(timeString.match(/[.:-]/g)){//if it has a hour-minute separator character
 		
 		//digits before the symbols
-		h = timeString.match(/\d+(?=[.:-_;,])/gi)[0];
+		h = timeString.match(/\d+(?=[.:-_;,])/g)[0];
 		
 		//digits after the symbols
-		m = timeString.match(/(?<=[.:-_;,])\d+/gi)[0];
+		m = timeString.match(/(?<=[.:-_;,])\d+/g)[0];
 	}
-	else if(timeString.match(/\d{4}/ig)){//4digit time
+	else if(timeString.match(/\d{4}/g)){//4digit time
 		
-		h = timeString.match(/\d{2}/ig)[0];
+		h = timeString.match(/\d{2}/g)[0];
 		
-		m = timeString.match(/\d{2}/ig)[1];
+		m = timeString.match(/\d{2}/g)[1];
 	}
-	else if(timeString.match(/\d{3}/ig)){//3digit
+	else if(timeString.match(/\d{3}/g)){//3digit
 		
-		h = timeString.match(/\d/ig)[0];
+		h = timeString.match(/\d/g)[0];
 		
-		m = timeString.match(/\d/ig)[1]+timeString.match(/\d/ig)[2]+'';
+		m = timeString.match(/\d/g)[1]+timeString.match(/\d/ig)[2]+'';
 	}
-	else if(timeString.match(/\d/ig)){//1 or 2 digits
+	else if(timeString.match(/\d/g)){//1 or 2 digits
 		
-		h = timeString.match(/\d+/ig)[0];
+		h = timeString.match(/\d+/g)[0];
 	}
 	
 	//convert strings to number
@@ -49,15 +49,7 @@ exports.parse = function(timeString){
 
 }
 
-function test(){
-	//test code
-	testvals = ["9", "9am", "9p", "926", "0926", "2126", "9:26pm", "9.26 am", "9,26", "926pm", "9.26 pm", "0926am", "926p", "9,26", "9260", "26:90", "26pm"];
 
-	for (var cnt=0; cnt<testvals.length; cnt++){
 
-		console.log(testvals[cnt]+" : "+JSON.stringify(exports.parse(testvals[cnt])));
-	}
-}
 
-test();
 
