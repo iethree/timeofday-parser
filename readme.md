@@ -52,7 +52,5 @@ output = timeParser.parse("26pm");
 
 [npm-image]: https://img.shields.io/npm/v/timeofday-parser.svg
 [npm-url]: https://npmjs.org/package/timeofday-parser
-[travis-image]: https://img.shields.io/travis/timeofday-parser/timeofday-parser/master.svg
-[travis-url]: https://travis-ci.org/timeofday-parser/timeofday-parser
-[coveralls-image]: https://img.shields.io/coveralls/timeofday-parser/timeofday-parser/master.svg
-[coveralls-url]: https://coveralls.io/r/timeofday-parser/timeofday-parser?branch=master
+[travis-image]: https://img.shields.io/travis/iethree/timeofday-parser/master.svg
+[travis-url]: https://travis-ci.org/iethree/timeofday-parser
