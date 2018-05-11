@@ -4,8 +4,6 @@ This is a simple script to parse a string containing a time of day into a known 
 
 [![NPM Version][npm-image]][npm-url]
 [![Linux Build][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
-
 ## Install
 
 `npm install timeofday-parser`
