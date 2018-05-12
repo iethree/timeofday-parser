@@ -8,7 +8,7 @@ exports.parse = function(timeString){
 	timeString =timeString.replace(/\s/g,'');
 	
 	
-	if(timeString.match(/[.:-]/g)){//if it has a hour-minute separator character
+	if(timeString.match(/[.:-_;,]/g)){//if it has a hour-minute separator character
 		
 		//digits before the symbols
 		h = timeString.match(/\d+(?=[.:-_;,])/g)[0];
